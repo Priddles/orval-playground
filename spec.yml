@@ -1,0 +1,33 @@
+openapi: 3.1.0
+
+info:
+  title: "Orval Playground"
+  version: 1.0.0
+
+paths:
+  /foo:
+    post:
+      responses:
+        "202":
+          $ref: "#/components/responses/Accepted"
+        "400":
+          description: "400"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
+components:
+  responses:
+    Accepted:
+      description: "Accepted"
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              pollUri:
+                type: string

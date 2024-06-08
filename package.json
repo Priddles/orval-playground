@@ -1,0 +1,17 @@
+{
+  "name": "orval-playground",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "gen": "orval",
+    "test": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "orval": "^6.30.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  }
+}
